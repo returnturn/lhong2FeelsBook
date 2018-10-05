@@ -5,71 +5,54 @@
     build-mode="COLD"
     density="420dpi"
     format="10"
-    ir-eligibility="CLASS_ADDED"
     plugin-version="3.1.4"
-    timestamp="1538768955655"
+    timestamp="1538770116480"
     token="6985517983710582120"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="778" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="110" />
+        duration="0" />
     <task
         name="verifier"
-        duration="11" />
-
-    <artifact
-        location="/Users/apple/lhong2FeelsBook/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/apple/lhong2FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/apple/lhong2FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/apple/lhong2FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/apple/lhong2FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/apple/lhong2FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/apple/lhong2FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/apple/lhong2FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/apple/lhong2FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
-        type="SPLIT" />
+        duration="0" />
 
     <build
         build-mode="FULL"
-        timestamp="1538767927999"
+        timestamp="1538769959766"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/apple/lhong2FeelsBook/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/apple/lhong2FeelsBook/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+            location="/Users/apple/lhong2FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/apple/lhong2FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            location="/Users/apple/lhong2FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
             type="SPLIT" />
         <artifact
             location="/Users/apple/lhong2FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
         <artifact
+            location="/Users/apple/lhong2FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            type="SPLIT" />
+        <artifact
             location="/Users/apple/lhong2FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/apple/lhong2FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/apple/lhong2FeelsBook/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/apple/lhong2FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
             type="SPLIT" />
         <artifact
             location="/Users/apple/lhong2FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
@@ -78,19 +61,7 @@
             location="/Users/apple/lhong2FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/apple/lhong2FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
-            type="SPLIT" />
-        <artifact
             location="/Users/apple/lhong2FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/apple/lhong2FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/apple/lhong2FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/apple/lhong2FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
             type="SPLIT" />
         <artifact
             location="/Users/apple/lhong2FeelsBook/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
@@ -98,36 +69,7 @@
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="CLASS_ADDED"
-        timestamp="1538768955655"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/Users/apple/lhong2FeelsBook/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/apple/lhong2FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/apple/lhong2FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/apple/lhong2FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/apple/lhong2FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/apple/lhong2FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/apple/lhong2FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/apple/lhong2FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/apple/lhong2FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
-            type="SPLIT" />
-    </build>
+        timestamp="1538770116480"
+        verifier="COLD_SWAP_REQUESTED" />
 
 </instant-run>
