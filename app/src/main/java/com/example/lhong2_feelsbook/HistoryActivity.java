@@ -97,6 +97,7 @@ public class HistoryActivity extends AppCompatActivity {
         editText.setText(oldItem);
         Button bt = (Button)dialog.findViewById(R.id.btdone);
         bt.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.O)
             @Override
             public void onClick(View v) {
                 alist.set(index,editText.getText().toString());
@@ -123,7 +124,9 @@ public class HistoryActivity extends AppCompatActivity {
             String line;
 
             while ((line=br.readLine())!=null) {
-                array.add(line);
+                if (!(line.equals(""))) {
+                    array.add(line);
+                }
             }
             br.close();
         } catch (FileNotFoundException e) {
@@ -142,7 +145,8 @@ public class HistoryActivity extends AppCompatActivity {
         try {
             fos = openFileOutput(FILE_NAME, MODE_PRIVATE);
             String string = new String();
-            for (int i=0;i<list.size();i++){
+            int ite = list.size();
+            for (int i=0;i<ite;i++){
                 string=string+list.get(i);
                 string=string+'\n';
             }
