@@ -4,6 +4,7 @@ import android.app.ActionBar;
 import android.app.Dialog;
 import android.app.ListActivity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.RequiresApi;
@@ -41,8 +42,7 @@ public class HistoryActivity extends AppCompatActivity {
 
     String FILE_NAME = "record.txt";
     private ListView list;
-    private Button show;
-    private Button edit;
+    private Button back;
 
     ArrayList<String> alist = new ArrayList<String>();
     String[] record_list;
@@ -78,6 +78,13 @@ public class HistoryActivity extends AppCompatActivity {
             }
         });
 
+        back = (Button) findViewById(R.id.back);
+
+        back.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                openMain();
+            }
+        });
         /*edit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -86,6 +93,11 @@ public class HistoryActivity extends AppCompatActivity {
         });*/
 
 
+    }
+    //go back to main
+    public void openMain() {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 
     //display the inputBox
@@ -138,7 +150,7 @@ public class HistoryActivity extends AppCompatActivity {
     }
 
 
-
+    //update edited text in file
     @RequiresApi(api = Build.VERSION_CODES.O)
     public void update(List list) {
         FileOutputStream fos = null;
