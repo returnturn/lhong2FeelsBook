@@ -4,7 +4,9 @@ import android.app.ActionBar;
 import android.app.Dialog;
 import android.app.ListActivity;
 import android.content.Context;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
@@ -98,7 +100,7 @@ public class HistoryActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 alist.set(index,editText.getText().toString());
-
+                update(alist);
                 arrayAdapter.notifyDataSetChanged();
                 dialog.dismiss();
             }
@@ -134,14 +136,18 @@ public class HistoryActivity extends AppCompatActivity {
 
 
 
-    /*public void saveText(View view) {
-        String text = editText.getText().toString();
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    public void update(List list) {
         FileOutputStream fos = null;
         try {
             fos = openFileOutput(FILE_NAME, MODE_PRIVATE);
-            fos.write(text.getBytes());
+            String string = new String();
+            for (int i=0;i<list.size();i++){
+                string=string+list.get(i);
+                string=string+'\n';
+            }
+            fos.write(string.getBytes());
             fos.close();
-            editText.getText().clear();
             Toast.makeText(getApplicationContext(), "success", Toast.LENGTH_LONG).show();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -156,5 +162,5 @@ public class HistoryActivity extends AppCompatActivity {
                 }
             }
         }
-    }*/
+    }
 }
