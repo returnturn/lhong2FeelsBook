@@ -25,6 +25,7 @@ import java.util.Date;
 import java.util.Locale;
 import java.util.TimeZone;
 
+//main class, initialize the first activity
 public class MainActivity extends AppCompatActivity {
 
     private static final String FILE_NAME = "record.txt";
@@ -79,6 +80,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //initilize counters
         alist  = load(FILE_NAME);
         counterLove = 0;
         counterJoy = 0;
@@ -114,6 +116,7 @@ public class MainActivity extends AppCompatActivity {
         numSadness.setText(Integer.toString(counterSadness));
         numFear.setText(Integer.toString(counterFear));
 
+        //update counters when click buttons
         BLove.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -163,11 +166,13 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    //jump to the second activity
     public void openHistory() {
         Intent intent = new Intent(this, HistoryActivity.class);
         startActivity(intent);
     }
 
+    //for saving comments
     public void saveText(View view, String emotion) {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd'T'hh:mm:ss", Locale.CANADA);
         simpleDateFormat.setTimeZone(TimeZone.getTimeZone("GMT"));
@@ -195,6 +200,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    //load file, return an arrayList with each line as an item
     private ArrayList<String> load(String input) {
         File file = new File(input);
         StringBuilder text = new StringBuilder();
@@ -220,7 +226,7 @@ public class MainActivity extends AppCompatActivity {
         return array;
     }
 
-
+    //counter for each emotion
     public void loveCounter (View view) {
         counterLove++;
         numLove.setText(Integer.toString(counterLove));

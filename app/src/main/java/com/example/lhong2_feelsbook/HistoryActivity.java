@@ -34,6 +34,7 @@ import java.util.List;
 import java.util.Locale;
 import java.util.TimeZone;
 
+//class for the second activity
 public class HistoryActivity extends AppCompatActivity {
 
     String FILE_NAME = "record.txt";
@@ -54,6 +55,7 @@ public class HistoryActivity extends AppCompatActivity {
     ArrayList<String> arrayList;
 
     @Override
+    //Used code from https://www.youtube.com/watch?v=cNVAhzaLYtw here for listView and inputBox
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_history);
@@ -84,6 +86,7 @@ public class HistoryActivity extends AppCompatActivity {
 
     }
 
+    //display the inputBox
     public void showInputBox(String oldItem, final int index) {
         final Dialog dialog = new Dialog(HistoryActivity.this);
         dialog.setTitle("Input Box");
@@ -103,7 +106,7 @@ public class HistoryActivity extends AppCompatActivity {
         dialog.show();
     }
 
-
+    //load file, return an arrayList with each line as an item
     private ArrayList<String> load(String input) {
         File file = new File(input);
         StringBuilder text = new StringBuilder();
